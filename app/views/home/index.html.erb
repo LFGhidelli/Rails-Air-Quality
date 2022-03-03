@@ -1,0 +1,17 @@
+<div class="card">
+  <div class= "image"></div>
+
+  <div class="card-info">
+    <div class= "card-header">
+      <h2>Check the air quality in your area</h2>
+    </div>
+
+    <div class= "form">
+      <%=form_tag zipcode_path, :method => 'POST' do %>
+      <div class= ''>
+      <%= text_field_tag 'zipcode', nil, placeholder: "Search Zicode", class: 'text-input' %>
+      <%= submit_tag 'Search', class: 'btn btn-success'%>
+      <%end %>
+    </div>
+  </div>
+</div>
